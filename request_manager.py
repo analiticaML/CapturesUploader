@@ -11,7 +11,7 @@ class RequestManager:
         body = {
             'account': os.environ.get('ACCOUNT'),
             'capture': bytes_image,
-            'date': path.split('/')[4][:-4],
+            'date': path.split('/')[5][:-4],
             'producer': os.environ.get('PRODUCER_NAME'),
             'secret': os.environ.get('PRODUCER_SECRET')
         }
